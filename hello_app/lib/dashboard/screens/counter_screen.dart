@@ -1,16 +1,24 @@
 import 'package:flutter/material.dart';
 
 class Counter extends StatefulWidget {
-  const Counter({Key? key, required this.title}) : super(key: key);
+  const Counter({Key? key, required this.title, required this.initialNumber})
+      : super(key: key);
 
   final String title;
+  final int initialNumber;
 
   @override
   State<Counter> createState() => _CounterState();
 }
 
 class _CounterState extends State<Counter> {
-  int _counter = 0;
+  dynamic _counter;
+
+  @override
+  void initState() {
+    super.initState();
+    _counter = widget.initialNumber;
+  }
 
   void _incrementCounter() {
     setState(() {
@@ -57,7 +65,7 @@ class _CounterState extends State<Counter> {
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child: const Text('Route'))
+                    child: const Text('Go back'))
               ],
             )
           ],
