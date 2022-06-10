@@ -7,8 +7,6 @@ This project is a simple Counter, but the initial number to count from is insert
 * Routing: navigate between screens
 * Routing: send data to new screen
 
-
-
 ### Screens
 
 1. The Home page with a simple "Hello" greeting;
@@ -16,6 +14,8 @@ This project is a simple Counter, but the initial number to count from is insert
 3. The "Counter" screen, where's the actual counting.
 
 The counter only adds or subtracts 1 from the target number. The goal isn't to complex anything, only to get started with important Flutter concepts.
+
+![flutter_gif](assets/flutter_github.gif)
 
 # References
 
